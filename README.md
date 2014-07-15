@@ -1,4 +1,4 @@
-# fdk-aac-build-script-for-iOS
+# fdk-aac build script for iOS
 
 Shell script to build fdk-aac for use in iOS apps.
 
