@@ -2,10 +2,10 @@
 
 CONFIGURE_FLAGS="--enable-static --with-pic=yes --disable-shared"
 
-ARCHS="armv7s x86_64 i386 armv7"
+ARCHS="arm64 x86_64 i386 armv7"
 
 # directories
-SOURCE="fdk-aac-0.1.3"
+SOURCE="fdk-aac-0.1.5"
 FAT="fdk-aac-ios"
 
 SCRATCH="scratch"
@@ -49,7 +49,7 @@ then
 		    if [ "$ARCH" = "x86_64" ]
 		    then
 		    	CFLAGS="$CFLAGS -mios-simulator-version-min=7.0"
-		    	HOST=
+			HOST="--host=x86_64-apple-darwin"
 		    else
 		    	CFLAGS="$CFLAGS -mios-simulator-version-min=7.0"
 			HOST="--host=i386-apple-darwin"

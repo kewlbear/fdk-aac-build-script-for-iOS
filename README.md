@@ -2,6 +2,13 @@
 
 Shell script to build fdk-aac for use in iOS apps.
 
+## Preparation
+
+```
+brew install automake libtool
+fdk-aac-X.X.X/autogen.sh
+```
+
 ## Usage
 
 * Build all:
@@ -21,7 +28,3 @@ build-fdk-aac.sh armv7s x86_64
 ```
 build-fdk-aac.sh lipo
 ```
-
-## Caveat
-
-No arm64 support yet
