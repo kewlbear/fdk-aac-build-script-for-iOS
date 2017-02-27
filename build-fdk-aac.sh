@@ -58,12 +58,11 @@ then
 		    PLATFORM="iPhoneOS"
 		    if [ $ARCH = arm64 ]
 		    then
-		        #CFLAGS="$CFLAGS -D__arm__ -D__ARM_ARCH_7EM__" # hack!
 		        HOST="--host=aarch64-apple-darwin"
                     else
 		        HOST="--host=arm-apple-darwin"
 	            fi
-		    SIMULATOR=
+		    CFLAGS="$CFLAGS -fembed-bitcode"
 		fi
 
 		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
