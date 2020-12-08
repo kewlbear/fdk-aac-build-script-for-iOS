@@ -1,5 +1,7 @@
 # fdk-aac build script for iOS
 
+See https://github.com/kewlbear/FFmpeg-iOS for .xcframework support, integration with FFmpeg and more.
+
 Shell script to build fdk-aac for use in iOS apps.
 
 ## Preparation
